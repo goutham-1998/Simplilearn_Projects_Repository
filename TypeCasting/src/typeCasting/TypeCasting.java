@@ -3,7 +3,7 @@ package typeCasting;
 public class TypeCasting {
 
 	public static void main(String[] args) {
-		System.out.println("Examples of Implicit Type Casting");
+		System.out.println("Examples of Implicit Type Casting are :-");
 		char a='A';
 		System.out.println("Value of a : "+a);
 		
@@ -20,9 +20,8 @@ public class TypeCasting {
 		System.out.println("Value of e : "+e);
 		
 		System.out.println("____________________________________________________________");
-		System.out.println("\n");
 		
-		System.out.println("Example of Explicit Type Casting");
+		System.out.println("Example of Explicit Type Casting are :-");
 				
 		double x=45.5;
 		int y=(int)x;
