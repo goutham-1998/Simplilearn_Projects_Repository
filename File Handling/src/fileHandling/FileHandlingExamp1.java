@@ -20,7 +20,7 @@ public class FileHandlingExamp1 {
 		 }
 		 
 		 else {
-			 System.out.println("File Already Exists");D
+			 System.out.println("File Already Exists");
 		 }
 		 
 		 String data = "Hello World!!!, This is an example for Writing the File";
