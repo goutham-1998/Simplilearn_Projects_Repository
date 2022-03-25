@@ -16,7 +16,7 @@
 <form action=adminPage method=post>
 	<label for=email>Email :-</label> <input type="email" name=email id=email /><br><br>
 	<label for=pass>Password :-</label> <input type="password" name=password id=pass /><br><br>
-	<input type=submit value=submit /> <input type=reset />
+	<input type=submit value=LOGIN /> <input type=reset />
 </form>
 </div><br>
 <a href=forgotPassword style="font-size:25;color:red;">Forgot Password</a>

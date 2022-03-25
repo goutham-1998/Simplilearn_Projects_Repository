@@ -32,16 +32,17 @@ public class MyController {
 		return "Home";
 	}
 	
-	@RequestMapping(value="adminLogin",method =RequestMethod.GET)
+//////////////////////////////////ADMIN LOGIN/////////////////////////////////////////////////////////////////////	
+	@RequestMapping(value="adminLogin",method =RequestMethod.GET)  //user id: admin@gmail.com , PWD : 1234//
 	public String adminLoginPage() {
 		return "AdminLogin";
 	}
-	
+//////////////////////////////////////////////FORGOT PASSWORD/////////////////////////////////////////////////////	
 	@RequestMapping(value="forgotPassword",method =RequestMethod.GET)
 	public String forgotPassword() {
 		return "ForgotPassword";
 	}
-	
+////////////////////////////////////////////ADMIN PASSWORD UPDATE/////////////////////////////////////////////////	
 	@RequestMapping(value="adminForgotPassword",method =RequestMethod.POST)
 	public String adminForgotPasswordPage(@RequestParam("email")String email,
 			@RequestParam("password")String password,ModelMap map) {
@@ -49,7 +50,7 @@ public class MyController {
 		if(repository.forgotPassword(email,password))
 			map.addAttribute("message","Password Updated");
 		else
-			map.addAttribute("message","Invalid Details");
+			map.addAttribute("message","OOPS!!!!You have entered incorrect credentials, Please try again.");
 		
 		return "ForgotPassword";
 	}
@@ -62,7 +63,7 @@ public class MyController {
 		if(adminRepository.verifyAdmin(new Admin(email,password)))
 			return "AdminPage";
 		else {
-			map.addAttribute("message", "Invalid Details");
+			map.addAttribute("message", "OOPS!!!!You have entered incorrect credentials, Please try again.");
 			return "AdminLogin";
 		}
 		

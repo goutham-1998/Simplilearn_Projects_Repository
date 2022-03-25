@@ -8,9 +8,8 @@
 </head>
 <body style="background-color:rgb(255,252,211)">
 <br>
-<a href=Home.jsp style="color:black;text-decoration:none ;font-size:35px;font-weight:bold;">Sporty Shoes</a>
-<br><br>
-<h2 style="color:blue;">Enter details to reset password</h2>
+
+<h2 style="color:blue;">Please Enter Your Email ID and New Password</h2>
 <div style="border:3px solid pink;width:25%;border-radius:20px;padding:20px">
 <form action=adminForgotPassword method=post>
 	<label for=email>Email :-</label> <input type="email" name=email id=email /><br><br>
@@ -18,6 +17,8 @@
 	<input type=submit value=submit /> <input type=reset />
 </form>
 </div><br><br>
-<p style="color:green;">${message}</p>
+<a href=Home.jsp style="color:Green;text-decoration:none ;font-size:20px;font-weight:bold;"> Click Here to Logout and Re-Login</a>
+<br><br>
+<p style="color:Green;">${message}</p>
 </body>
 </html>
