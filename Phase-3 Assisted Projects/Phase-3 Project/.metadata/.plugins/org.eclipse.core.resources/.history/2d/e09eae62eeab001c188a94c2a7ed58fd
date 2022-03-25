@@ -1,0 +1,5 @@
+package org.sporty_shoes.model;
+
+public class Product {
+
+}

@@ -1,0 +1,5 @@
+package org.sporty_shoes.repository;
+
+public class Repository {
+
+}
